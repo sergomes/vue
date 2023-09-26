@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<div id="app">
+ <h1>Primeiro App</h1>
+ <p>Bem vindo {{nome}}</p>
+ <a v-bind:href="canal">Canal Youtube</a>
+
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        nome: "Sérgio",
+        canal: 'https://youtube.com'
+      }
+    },
+  })
+</script>
+<style>
+  
+</style>
